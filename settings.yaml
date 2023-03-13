@@ -1,0 +1,6 @@
+VERSION: 0.1.1
+NAME: parent-child
+COMPONENT_NAME_PREFIX: github.com/sidhishruti22/parent-child
+PROVIDER: sidhishruti22
+BACKEND_VERSION: 1.0.0
+FRONTEND_VERSION: 1.0.0

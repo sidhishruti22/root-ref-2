@@ -1,0 +1,58 @@
+components:
+# Deployable component: microblog-deployment
+# - contains application and references all runtime dependencies
+# - used as root component to deploy the complete application
+# - version numbering scheme follows the main application
+- name: ${COMPONENT_NAME_PREFIX}/parent-deployment
+  version: ${VERSION}
+  provider:
+    name: ${PROVIDER}
+  componentReferences:
+  - name: backend-app
+    componentName: github.com/sidhishruti22/backend-app
+    version: ${BACKEND_VERSION}
+  - name: frontend-app
+    componentName: github.com/sidhishruti22/frontend-app
+    version: ${FRONTEND_VERSION}
+#
+# Nginx-Controller Component
+# - runtime dependency, use pre-built images
+- name: ${COMPONENT_NAME_PREFIX}/backend-app
+  version: ${BACKEND_VERSION}
+  provider:
+    name: ${PROVIDER}
+  resources:
+  - name: deploymeny
+    type: Directory
+    input:
+      type: dir
+      path: ./backend-app/manifests
+  - name: image
+    type: ociImage
+    version: ${BACKEND_VERSION}
+    access:
+      type: ociArtifact
+      imageReference: ammar31/database-app
+#
+# frontend Component
+# - runtime dependency, use pre-built images
+- name: ${COMPONENT_NAME_PREFIX}/frontend-app
+  version: ${FRONTEND_VERSION}
+  provider:
+    name: ${PROVIDER}
+  resources:
+  - name: deploymeny
+    type: Directory
+    input:
+      type: dir
+      path: ./frontend-app/manifests
+  - name: image
+    type: ociImage
+    version: ${FRONTEND_VERSION}
+    access:
+      type: ociArtifact
+      imageReference: ammar31/python-django-2.3
+
+
+
+
