@@ -11,4 +11,4 @@ spec:
   resource:
     name: deploymeny
   snapshotTemplate:
-    name: parent-snapshot-deployment
+    name: parent-child-snapshot-deployment
