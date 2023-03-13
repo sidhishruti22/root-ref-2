@@ -5,9 +5,9 @@ metadata:
   namespace: ocm-system
 spec:
   interval: 10m0s
-  component: github.com/sidhishruti22/parent-deployment
+  component: github.com/sidhishruti22/parent-child/parent-deployment
   version:
-    semver: v1.0.0
+    semver: 0.1.1
   repository:
     url: ghcr.io/sidhishruti22
     secretRef:
