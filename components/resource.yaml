@@ -6,9 +6,9 @@ metadata:
 spec:
   interval: 10m0s
   componentVersionRef:
-    name: parent-deployment
+    name: parent-child
     namespace: ocm-system
   resource:
     name: deployment
   snapshotTemplate:
-    name: parent-deployment
+    name: parent-child-deployment
