@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 10m0s
   componentVersionRef:
-    name: github.com/sidhishruti22/parent-child/parent-deployment
+    name: parent-child
     namespace: ocm-system
   resource:
     name: deploymeny
