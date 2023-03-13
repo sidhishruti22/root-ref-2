@@ -1,7 +1,7 @@
 apiVersion: delivery.ocm.software/v1alpha1
 kind: Resource
 metadata:
-  name: parent-deployment
+  name: parent-child
   namespace: ocm-system
 spec:
   interval: 10m0s
@@ -11,4 +11,4 @@ spec:
   resource:
     name: parent-child
   snapshotTemplate:
-    name: parent-deployment
+    name: parent-child-deployment
