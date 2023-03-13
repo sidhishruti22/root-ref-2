@@ -41,7 +41,7 @@ components:
   provider:
     name: ${PROVIDER}
   resources:
-  - name: deploymeny
+  - name: deployment
     type: Directory
     input:
       type: dir
