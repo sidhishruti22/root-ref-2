@@ -9,6 +9,6 @@ spec:
     name: github.com/sidhishruti22/parent-child/parent-deployment
     namespace: ocm-system
   resource:
-    name: parent-deployment
+    name: deploymeny
   snapshotTemplate:
     name: parent-snapshot-deployment
