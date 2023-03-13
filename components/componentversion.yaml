@@ -5,7 +5,7 @@ metadata:
   namespace: ocm-system
 spec:
   interval: 10m0s
-  component: github.com/sidhishruti22/parent-child/parent-deployment/
+  component: github.com/sidhishruti22/parent-child/backend-app
   version:
     semver: 0.1.1
   repository:
