@@ -13,7 +13,7 @@ spec:
     secretRef:
       name: creds
   verify:
-  - name: parent-child
+  - name: parent-child-publickey
     publicKey:
       secretRef:
         name: parent-child-publickey
