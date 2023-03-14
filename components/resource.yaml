@@ -9,6 +9,6 @@ spec:
     name: parent-child
     namespace: ocm-system
   resource:
-    name: deployment
+    name: deploymeny
   snapshotTemplate:
-    name: parent-child-snapshot-deployment
+    name: parent-child-backend-snapshot-deployment
