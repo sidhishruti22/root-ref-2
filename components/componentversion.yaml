@@ -1,11 +1,11 @@
 apiVersion: delivery.ocm.software/v1alpha1
 kind: ComponentVersion
 metadata:
-  name: parent-child-approach
+  name: parent-child
   namespace: ocm-system
 spec:
   interval: 10m0s
-  component: github.com/sidhishruti22/parent-child/backend-app
+  component: github.com/sidhishruti22/parent-child/frontend-app
   version:
     semver: 1.1.0
   repository:
