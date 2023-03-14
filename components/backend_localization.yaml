@@ -13,7 +13,10 @@ spec:
       kind: Snapshot
       name: parent-child-backend-snapshot-deployment
       namespace: ocm-system
-  
+  configRef:
+    resource:
+      resourceRef:
+        name: config
   snapshotTemplate:
     name: parent-child-backend-deployment-localized
     createFluxSource: true
