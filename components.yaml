@@ -22,11 +22,17 @@ components:
   provider:
     name: ${PROVIDER}
   resources:
-  - name: deploymeny
+  - name: deployment
     type: Directory
     input:
       type: dir
       path: ./backend-app/manifests
+  - name: config
+    type: PlainText
+    input:
+      type: file
+      path: "config.yaml"
+      compress: true
   - name: image
     type: ociImage
     version: ${BACKEND_VERSION}
@@ -46,6 +52,12 @@ components:
     input:
       type: dir
       path: ./frontend-app/manifests
+  - name: config
+    type: PlainText
+    input:
+      type: file
+      path: "config.yaml"
+      compress: true
   - name: image
     type: ociImage
     version: ${FRONTEND_VERSION}

@@ -13,6 +13,7 @@ spec:
       kind: Snapshot
       name: parent-child-backend-snapshot-deployment
       namespace: ocm-system
+  
   snapshotTemplate:
     name: parent-child-backend-deployment-localized
     createFluxSource: true
